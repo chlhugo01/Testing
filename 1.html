@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <style>
+    #overlay {
+      position: absolute; /* Sit on top of the page content */
+      display: block; /* Hidden by default */
+      height: 550px; /* Full height (cover the whole page) */
+      top: 50px;
+      left: 10%;
+      right: 10%;
+      bottom: 0;
+      background-color: rgba(220, 229, 242,1); /* Black background with opacity */
+      z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    }
+  </style>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+<body>
+
+
+<div class="container">
+  <div style="height: 50px">
+  </div>
+
+  <div class="row justify-content-center" >
+    <div class="col-12 ">
+      <div id="overlay">
+        <div class=" d-flex  justify-content-center" style="padding-top: 120px">
+          <h1 style="font-size: 60px" id="statementA">Click Start to begin</h1>
+        </div>
+        <div class=" d-flex  justify-content-center" style="padding-top: 15px;">
+          <h2  id="statementB"></h2>
+        </div>
+        <div class=" d-flex  justify-content-center" style="padding-top: 15px;">
+          <h2  id="statementC"></h2>
+        </div>
+        <div class=" d-flex  justify-content-center" style="padding-top: 15px;">
+          <h2  id="statementD"></h2>
+        </div>
+        <div class=" d-flex  justify-content-center" style="padding-top: 50px;">
+          <button type="button" class="btn btn-primary" id="start" style="padding: 20px 50px;font-size: 50px;
+    border-radius: 15px;">Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center  " style="height: 500px;background: #e6f1fa">
+    <div class="col-4 ">
+      <div class="h-25 d-flex align-items-center justify-content-center" >
+        <h4 class="text-center" style="font-size: 40px;">Remaining: <span id="remainingtime"></span>s</h4>
+      </div>
+      <div class="h-50 d-flex align-items-center justify-content-center" style="background: #b5d8f5;font-size: 50px;">
+        <h4 class="text-center" style="font-size: 50px;"><span id="showquestion"></span></h4>
+      </div>
+      <div class="h-25 d-flex align-items-center justify-content-center" >
+        <h4 class="text-center" style="font-size: 40px;">You answered <span id="questionanswered"></span></h4>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="m-3 d-flex align-items-center justify-content-center border" style="background: #fac3b4;height:20%" id="box1">
+        <h4 class="text-center" style="font-size: 50px;"><span id="option1"></span></h4>
+      </div>
+      <div class="m-3 d-flex align-items-center justify-content-center border" style="background: #b5d8f5;height:20%" id="box2">
+        <h4 class="text-center" style="font-size: 50px;"><span id="option2"></span></h4>
+      </div>
+      <div class="m-3 d-flex align-items-center justify-content-center border" style="background: #fac3b4;height:20%" id="box3">
+        <h4 class="text-center" style="font-size: 50px;"><span id="option3"></span></h4>
+      </div>
+      <div class="m-3 d-flex align-items-center justify-content-center border" style="background: #b5d8f5;height:20%" id="box4">
+        <h4 class="text-center" style="font-size: 50px;"><span id="option4"></span></h4>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
